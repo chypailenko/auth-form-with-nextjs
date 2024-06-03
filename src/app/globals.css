@@ -3,27 +3,31 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --foreground-rgb: 74, 78, 113, 1;
+  --background-start-rgb: 244, 249, 255, 1;
+  --background-end-rgb: 224, 237, 251, 1;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  font-family: "Inter";
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.form {
+  height: 100vh;
+  background-image: url('./images/bg_stars.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 628px;
+  background-position: -2px -38px;
+}
+
+.signUpBtn {
+  background: linear-gradient(to right, #70C3FF,#4B65FF);
 }
 
 @layer utilities {
